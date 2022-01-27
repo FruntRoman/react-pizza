@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BurgerButton component: renders 1`] = `
+<div
+  className="wrap"
+>
+  <p
+    className="burger-button button undefined"
+  />
+</div>
+`;

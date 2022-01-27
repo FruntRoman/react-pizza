@@ -1,0 +1,20 @@
+$bgMainColor:#FFDF8C;
+$btnColor: #FE5F1E;
+@mixin transition01s{
+    transition: 0.1s ease-in;
+}
+@mixin hoverSeletor {
+    &:hover{
+        color: #2C2C2C;
+        background-color: rgb(230, 230, 230);
+        border-radius: 10px;
+    }
+    
+}
+@mixin hoverList {
+    &:hover{
+        color: #2C2C2C;
+        background-color: rgb(230, 230, 230);
+    }
+    
+}

@@ -1,0 +1,24 @@
+@import '../vars';
+
+.header{
+    padding: 40px 0;
+    border-bottom: 1px solid #F7F7F7;
+    &__logo{
+        display: flex;
+        h1{
+            margin: 0;
+            color: #181818;
+            font-size: 24px;
+            letter-spacing: 1%;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+        img{
+            margin-right: 15px;
+        }
+        p{
+            color:#7b7b7b;
+        }
+    }
+    
+}

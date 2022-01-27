@@ -1,0 +1,27 @@
+@import "../vars";
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 110px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+
+    input{
+        border:none;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 5px 0 10px 0;
+        background-color: #F9F9F9;
+    }
+    label{
+        font-size: 1.5em;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    button{
+        margin-top: 20px;
+    }
+}

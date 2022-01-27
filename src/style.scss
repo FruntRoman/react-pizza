@@ -1,0 +1,62 @@
+
+@import "./scss/vars";
+@import "./scss/libs";
+@import "./scss/fonts";
+@import "./scss/components/all";
+
+*{
+    padding:0;
+    margin:0;
+    list-style:none;
+    outline:none;
+    font-family:'Proxima Nova', Roboto, system-ui, Tahoma, sans-serif;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+i{
+    font-style: normal;
+}
+body{
+    background-color: $bgMainColor;
+}
+.wrapper{
+    max-width: 1340px;
+    margin: 50px auto;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-cart{
+        
+        margin: 0 auto;       
+        width: 62%;
+        align-items:baseline;
+        padding-bottom: 33px;
+    }
+    &__title{
+        margin-top: 32px;
+        display: flex;
+        svg{
+            
+        }
+    }
+    
+}
+a{
+    text-decoration: none;
+}
+
+
+
+@import "./scss/media";
