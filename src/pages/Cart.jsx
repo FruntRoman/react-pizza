@@ -7,12 +7,14 @@ import emptyCartImg from '../assets/img/empty-cart.png';
 import {clearPizzaItem} from '../redux/actions/cart';
 import {increasePizzaCount, decreasePizzaCount} from '../redux/actions/cart';
 import Modal from 'react-modal';
+import {useIntercom} from "react-use-intercom";
 
 
 const Cart = () => {
     const dispatch = useDispatch()
     const [modalIsOpen, setIsOpen] = useState(false);
     const [message, setMessage] = useState('');
+    const { boot } = useIntercom();
 
     const clearCartAction = () => {
         setIsOpen(true);
@@ -43,6 +45,8 @@ const Cart = () => {
             transform: 'translate(-50%, -50%)',
         },
     };
+
+    boot();
 
     return (
         <div className="content">

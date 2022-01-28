@@ -4,6 +4,7 @@ import { Categories, PizzaBlock, Loaded, BurgerButton } from '../componets'
 import { useSelector, useDispatch } from 'react-redux'
 import { fetchPizzas } from '../redux/actions/pizzas'
 import { addPizzaToCart } from '../redux/actions/cart'
+import {useIntercom} from "react-use-intercom";
 
 
 const categories = [
@@ -16,6 +17,8 @@ const categories = [
 
 
 const Main = () => {
+
+    const { boot } = useIntercom();
     let items = useSelector(({ pizzas }) => pizzas.items)
     const isLoaded = useSelector(({ pizzas }) => pizzas.isLoaded)
     const [category, setCategory] = useState(null)
@@ -34,7 +37,7 @@ const Main = () => {
     const handleClickState = () => {
         setSideBar(!sideBar)
     }
-
+    boot();
     return (
         <main className="content">
             <BurgerButton onClick={handleClickState}/>

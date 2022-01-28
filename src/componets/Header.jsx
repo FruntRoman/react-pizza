@@ -13,7 +13,7 @@ function Header() {
             <div className="container">
                 <Link to="/">
                     <div className="header__logo">
-                        <img width="38" height="45" src={svgLogo} alt="React Pizza самая вкусная пицца во вселенной" />
+                        <img width="38" height="45" src={svgLogo} alt="React Pizza the most delicious pizza in the universe" />
                         <div className="header__logo-title">
                             <h1>React Pizza</h1>
                             <p>the most delicious pizza in the universe</p>
@@ -23,7 +23,7 @@ function Header() {
                 <Link to='/cart'>
                     <Button className="button--cart">
                         <div className="button-wrapper">
-                            <span>{totalPrice} $</span>
+                            <span className='total-price-span'>{totalPrice} $</span>
                             <div className="button-wrapper-amount">
                                 <div className="button-delimiter"></div>
                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,7 +37,7 @@ function Header() {
                                         d="M4.78002 4.99999H16.3334L15.2134 10.5933C15.1524 10.9003 14.9854 11.176 14.7417 11.3722C14.4979 11.5684 14.1929 11.6727 13.88 11.6667H6.83335C6.50781 11.6694 6.1925 11.553 5.94689 11.3393C5.70128 11.1256 5.54233 10.8295 5.50002 10.5067L4.48669 2.82666C4.44466 2.50615 4.28764 2.21182 4.04482 1.99844C3.80201 1.78505 3.48994 1.66715 3.16669 1.66666H1.66669"
                                         stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
-                                <span>{totalCount}</span>
+                                <span className='total-count-span'>{totalCount}</span>
                             </div>
                         </div>
                     </Button>
